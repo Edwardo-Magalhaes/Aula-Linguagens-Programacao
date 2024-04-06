@@ -1,2 +1,1 @@
-Teste = "Olá mundo, salve?"
-print(Teste)
+idade = int(input())
