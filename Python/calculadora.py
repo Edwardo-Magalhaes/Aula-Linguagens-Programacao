@@ -1,21 +1,27 @@
-valor1 = int(input())
-
-while valor1 != "-1" or valor2 != "-1":
-    operador = input()
-    valor2 = int(input())
-    if valor2 == "-1":
-        break
-
+def soma (a, b):
+    return (a + b)
+def sub (a, b):
+    return (a - b)
+def mult (a, b):
+    return (a*b)
+def div (a, b):
+    return (a/b)
+valor1 = 0
+valor2 = 0
+operador = 0
+while valor1 != -1 and valor2 != -1  and operador != -1:
+    valor1 = int(input("digite um valor: "))      
+    operador = str(input("digite um operador: "))
+    valor2 = int(input("digite outro valo5r: "))
+    resultado = 0
     if operador == '+':
-        resultado = valor1 + valor2
+        resultado = soma (valor1, valor2)
     elif operador == '-':
-        resultado = valor1 - valor2
+        resultado = sub (valor1, valor2)
     elif operador == '*':
-        resultado = valor1 * valor2
+        resultado = mult (valor1, valor2)
     elif operador == '/':
-        resultado = valor1 / valor2
+        resultado = div (valor1, valor2)
     else:
-        print('Operador inválido')
-        continue
+        print('operador inválido')
     print(resultado)
-    valor1 = int(input())
