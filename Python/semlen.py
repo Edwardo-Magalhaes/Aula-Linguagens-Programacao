@@ -13,7 +13,6 @@ def conta_letras(lista):
         print(f'quantidade de letras na palavra {contador_palavra}: {contador_letras}')
         contador_palavra = contador_palavra + 1
 
-# Testa as funções com a lista fornecida
 lista = ["oi", "tubem", "palavra", "quadro","FAMENGOOOO","VASCOOO"]
 conta_palavras(lista)
 conta_letras(lista)
